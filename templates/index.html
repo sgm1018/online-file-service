@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Servicios de Archivos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Bienvenido(a) a nuestros Servicios de Archivos</h1>
+            <p>¡Comparte y almacena tus archivos de forma segura y sencilla!</p>
+        </div>
+        <div class="options">
+            <a href="{{ url_for('upload') }}" class="btn">Cargar un archivo</a>
+            <a href="{{ url_for('download') }}" class="btn">Descargar un archivo</a>
+        </div>
+    </div>
+</body>
+</html>

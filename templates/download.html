@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Servicios de Archivos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Bienvenido(a) a nuestros Servicios de Archivos</h1>
+            <p>¡Comparte y almacena tus archivos de forma segura y sencilla!</p>
+            <a class="back-button" href="#" onclick="history.back()">Volver</a>
+        </div>
+
+        <div class="file-list">
+            {% if files %}
+                <h2>Archivos disponibles para descargar:</h2>
+                <ul>
+                    {% for file in files %}
+                        <li>
+                            {% if file.endswith('.jpg') or file.endswith('.jpeg') or file.endswith('.png') %}
+                                <img class="file-thumbnail" src="\static\min_img\imgIcon.png" alt="File Thumbnail">
+                            {% else %}
+                                <img class="file-icon" src="/uploads/{{ file }}" alt="File Icon">
+                            {% endif %}
+                            <span class="file-name">{{ file }}</span>
+                            <a class="download-link" href="{{ url_for('download_file', filename=file) }}">Descargar</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No hay archivos disponibles para descargar.</p>
+            {% endif %}
+        </div>
+
+        <div class="footer">
+            <p>¡Gracias por usar nuestros servicios de archivos!</p>
+        </div>
+    </div>
+</body>
+</html>

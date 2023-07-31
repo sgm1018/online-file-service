@@ -1,0 +1,104 @@
+/* Reset de estilos */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #0072c6;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #444444;
+    font-size: 16px;
+}
+
+.file-list {
+    margin-bottom: 20px;
+}
+
+.file-list h2 {
+    color: #0072c6;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.file-list ul {
+    list-style: none;
+}
+
+.file-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.file-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.file-name {
+    flex: 1;
+    color: #333333;
+    font-size: 18px;
+}
+
+.download-link {
+    color: #0072c6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0072c6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.btn:hover {
+    background-color: #005ea3;
+}

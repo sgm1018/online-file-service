@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cargar Archivo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a class="back-button" href="#" onclick="history.back()">Volver</a>
+            <h1>Cargar Archivo</h1>
+        </div>
+
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Cargar">
+        </form>
+
+        <div class="footer">
+            <a class="back-button" href="#" onclick="history.back()">Volver</a>
+        </div>
+    </div>
+</body>
+</html>
