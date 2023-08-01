@@ -8,10 +8,6 @@ The File Service Project is a web application that allows users to securely uplo
 
 - **Download Files:** The "Download" page displays a list of available files on the server. Users can click on a file name to download the corresponding file.
 
-- **File Thumbnails:** The application generates and displays thumbnails for image files on the "Download" page, providing a visual preview of the files.
-
-- **Back Button:** Each page includes a "Back" button in the header, allowing users to navigate back to the previous page in their browser's history.
-
 ## Setup and Installation
 To run the File Service Project locally, follow these steps:
 
@@ -46,8 +42,6 @@ The project is organized as follows:
 The project relies on the following external libraries:
 
 - Flask: A micro web framework for Python.
-
-- Pillow: A Python Imaging Library (PIL) that is used for image processing, used to resize the img types of the files.
 
 ## Contributing
 If you would like to contribute to the File Service Project, you can fork this repository and submit pull requests with your proposed changes. All contributions are welcome!
